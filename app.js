@@ -1,6 +1,6 @@
 const express = require('express')
-
 const authRoutes = require('./routes/auth-routes')
+const passportSetup = require('./config/passport-setup')
 
 const app = express()
 
@@ -15,4 +15,4 @@ app.get('/', (req, res) => {
   res.render('home')
 })
 
-app.listen(4000, ()=>console.log('App listening on 4000!'))
+app.listen(4000, () => console.log('App listening on 4000!'))
