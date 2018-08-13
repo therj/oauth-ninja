@@ -6,11 +6,11 @@ router.get('/login', (req, res) => {
 })
 
 router.get('/logout', (req, res) => {
-  res.send('logging out')
+  res.send('Logging out.')
 })
 
 router.get('/google', (req, res) => {
-  res.send('logging in with googles')
+  res.send('Logging in with Google.')
 })
 
 
